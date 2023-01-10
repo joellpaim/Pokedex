@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
-@use './config-scss/variables.scss';
-@use './config-scss/reset.scss';
-@use './config-scss/rem-calc.scss';
+@import './config-scss/variables.scss';
+@import './config-scss/reset.scss';
+@import './config-scss/rem-calc.scss';
 
 html{
     font-family: 'Roboto', sans-serif;
@@ -9,7 +9,7 @@ html{
 }
 
 main{
-    min-width: rem-calc(600);
+    width: rem-calc(600);
     margin: 0 auto;
     box-sizing: border-box;
 }
