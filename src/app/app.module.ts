@@ -1,5 +1,6 @@
 // Modules
 import { PagesModule } from './pages/pages.module';
+import { HttpClientModule } from '@angular/common/http';
 
 // Other imports
 import { NgModule } from '@angular/core';
@@ -12,7 +13,7 @@ import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, PagesModule],
+  imports: [BrowserModule, AppRoutingModule, PagesModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })
