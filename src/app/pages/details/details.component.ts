@@ -11,6 +11,7 @@ import { forkJoin } from 'rxjs';
 export class DetailsComponent implements OnInit {
   private urlPokemon: string = 'https://pokeapi.co/api/v2/pokemon';
   private urlName: string = 'https://pokeapi.co/api/v2/pokemon-species';
+  public pokemon: any;
 
   constructor(
     private activatedRoute: ActivatedRoute,
@@ -18,10 +19,10 @@ export class DetailsComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.pokemon;
+    this.getPokemon;
   }
 
-  get pokemon() {
+  get getPokemon() {
     const id = this.activatedRoute.snapshot.params['id'];
     const pokemon = this.pokeApiService.apiGetPokemon(
       `${this.urlPokemon}/${id}`
@@ -29,7 +30,7 @@ export class DetailsComponent implements OnInit {
     const name = this.pokeApiService.apiGetPokemon(`${this.urlName}/${id}`);
 
     return forkJoin([pokemon, name]).subscribe((res) => {
-      console.log(res);
+      this.pokemon = res;
     });
   }
 }
