@@ -1,8 +1,8 @@
 # Pokedex
 
-<img src="src/app/assets/Pokedex1.png" width="800px;" alt="Tela inicial">
+<img src="https://github.com/joellpaim/Pokedex/blob/develop/src/assets/Pokedex1.png" width="800px;" alt="Tela inicial">
 <br>
-<img src="src/app/assets/Pokedex2.png" width="800px;" alt="Tela de detalhes">
+<img src="https://github.com/joellpaim/Pokedex/blob/develop/src/assets/Pokedex2.png" width="800px;" alt="Tela de detalhes">
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.3.
 
